@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ingest OTIF dataset to DB",
+      "type": "python",
+      "request": "launch",
+      "program": "scripts/ingest_dataset.py",
+      "args": ["--path", "/Users/pureme/JIT/OTIF.xlsx"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "FastAPI: Uvicorn (JIT RCA)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["api.main:app", "--reload"],
+      "jinja": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    }
+  ]
+}
