@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+
+# data / db
+*.sqlite
+*.db
+
+# datasets
+*.xlsx
+~$*.xlsx
