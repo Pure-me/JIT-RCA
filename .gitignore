@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+jit.sqlite
+data/jit.db
+*.db
+*.sqlite
+*.sqlite3
+*.xlsx
+~$*.xlsx
