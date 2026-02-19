@@ -1,11 +1,18 @@
+# Python / venv
 .venv/
+venv/
 __pycache__/
 *.pyc
-.DS_Store
-jit.sqlite
-data/jit.db
-*.db
+
+# DB / data
 *.sqlite
-*.sqlite3
+*.db
+data/
+
+# Excel / temp
 *.xlsx
 ~$*.xlsx
+
+# IDE
+.vscode/
+.DS_Store
